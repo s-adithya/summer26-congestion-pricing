@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# IDE and editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating system
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Data (preserve directory structure)
+data/*
+!data/.gitkeep
+
+# Generated artifacts (preserve directory structure)
+artifacts/**/*
+!artifacts/**/.gitkeep
