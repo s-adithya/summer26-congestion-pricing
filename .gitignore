@@ -32,8 +32,9 @@ Thumbs.db
 Desktop.ini
 
 # Data (preserve directory structure)
-data/*
-!data/.gitkeep
+data/**
+!data/**/
+!data/**/.gitkeep
 
 # Generated artifacts (preserve directory structure)
 artifacts/**/*
