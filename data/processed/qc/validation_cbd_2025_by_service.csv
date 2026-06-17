@@ -1,0 +1,9 @@
+service_type,cbd_congestion_fee,trip_count
+hvfhv,0.0,65785711
+hvfhv,1.5,34717731
+hvfhv,3.0,20
+yellow,0.0,5295154
+yellow,0.25,1
+yellow,0.75,14731786
+yellow,1.25,131
+yellow,1.5,9

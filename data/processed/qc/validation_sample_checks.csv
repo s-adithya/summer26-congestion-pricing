@@ -1,0 +1,9 @@
+check,passed,detail
+row_count_100,True,rows=100
+includes_yellow,True,count=50
+includes_hvfhv,True,count=50
+includes_2024,True,count=50
+includes_2025,True,count=50
+all_months_feb_jun,True,"present=[2, 3, 4, 5, 6]; missing=none"
+2025_charged_cbd_true,True,count=24
+2025_charged_cbd_false,True,count=26

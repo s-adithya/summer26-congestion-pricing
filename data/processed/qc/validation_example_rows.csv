@@ -1,0 +1,301 @@
+issue_type,service_type,year,month,rows_found,note,example_rank,pickup_datetime,dropoff_datetime,trip_distance_miles,trip_duration_seconds,cbd_congestion_fee,passenger_cost_pretip,relative_cbd_burden,charged_cbd_flag,source_file
+negative_cbd_congestion_fee,hvfhv,2024,2,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+non_positive_passenger_cost_pretip,hvfhv,2024,2,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+zero_distance,hvfhv,2024,2,3079,,1.0,2024-02-01 00:18:16,2024-02-01 00:25:51,0.0,455.0,0.0,10.780000000000001,0.0,False,data/raw/2024/Feb/fhvhv_tripdata_2024-02.parquet
+zero_distance,hvfhv,2024,2,3079,,2.0,2024-02-01 00:29:48,2024-02-01 00:33:36,0.0,228.0,0.0,15.16,0.0,False,data/raw/2024/Feb/fhvhv_tripdata_2024-02.parquet
+zero_distance,hvfhv,2024,2,3079,,3.0,2024-02-01 00:47:03,2024-02-01 00:49:59,0.0,176.0,0.0,10.780000000000001,0.0,False,data/raw/2024/Feb/fhvhv_tripdata_2024-02.parquet
+zero_distance,hvfhv,2024,2,3079,,4.0,2024-02-01 00:46:31,2024-02-01 00:57:44,0.0,673.0,0.0,21.86,0.0,False,data/raw/2024/Feb/fhvhv_tripdata_2024-02.parquet
+zero_distance,hvfhv,2024,2,3079,,5.0,2024-02-01 00:34:19,2024-02-01 00:46:23,0.0,724.0,0.0,17.72,0.0,False,data/raw/2024/Feb/fhvhv_tripdata_2024-02.parquet
+very_long_duration,hvfhv,2024,2,0,No rows matching this QC flag.,,,,,,,,,,
+very_long_distance,hvfhv,2024,2,1284,,1.0,2024-02-01 00:36:54,2024-02-01 02:35:14,100.42,7100.0,0.0,273.88,0.0,False,data/raw/2024/Feb/fhvhv_tripdata_2024-02.parquet
+very_long_distance,hvfhv,2024,2,1284,,2.0,2024-02-01 00:46:41,2024-02-01 02:42:53,102.6,6972.0,0.0,261.09,0.0,False,data/raw/2024/Feb/fhvhv_tripdata_2024-02.parquet
+very_long_distance,hvfhv,2024,2,1284,,3.0,2024-02-01 04:25:19,2024-02-01 06:40:45,102.15,8126.0,0.0,352.2,0.0,False,data/raw/2024/Feb/fhvhv_tripdata_2024-02.parquet
+very_long_distance,hvfhv,2024,2,1284,,4.0,2024-02-01 05:48:44,2024-02-01 07:54:21,111.654,7537.0,0.0,345.99,0.0,False,data/raw/2024/Feb/fhvhv_tripdata_2024-02.parquet
+very_long_distance,hvfhv,2024,2,1284,,5.0,2024-02-01 07:57:10,2024-02-01 10:38:55,103.17,9705.0,0.0,390.18,0.0,False,data/raw/2024/Feb/fhvhv_tripdata_2024-02.parquet
+negative_cbd_congestion_fee,hvfhv,2024,3,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+non_positive_passenger_cost_pretip,hvfhv,2024,3,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+zero_distance,hvfhv,2024,3,2952,,1.0,2024-03-01 00:41:45,2024-03-01 00:42:59,0.0,74.0,0.0,8.33,0.0,False,data/raw/2024/Mar/fhvhv_tripdata_2024-03.parquet
+zero_distance,hvfhv,2024,3,2952,,2.0,2024-03-01 00:15:23,2024-03-01 00:17:38,0.0,135.0,0.0,12.9,0.0,False,data/raw/2024/Mar/fhvhv_tripdata_2024-03.parquet
+zero_distance,hvfhv,2024,3,2952,,3.0,2024-03-01 01:22:16,2024-03-01 01:25:15,0.0,179.0,0.0,8.940000000000001,0.0,False,data/raw/2024/Mar/fhvhv_tripdata_2024-03.parquet
+zero_distance,hvfhv,2024,3,2952,,4.0,2024-03-01 01:12:36,2024-03-01 01:14:49,0.0,133.0,0.0,7.82,0.0,False,data/raw/2024/Mar/fhvhv_tripdata_2024-03.parquet
+zero_distance,hvfhv,2024,3,2952,,5.0,2024-03-01 01:07:18,2024-03-01 01:11:06,0.0,228.0,0.0,10.780000000000001,0.0,False,data/raw/2024/Mar/fhvhv_tripdata_2024-03.parquet
+very_long_duration,hvfhv,2024,3,0,No rows matching this QC flag.,,,,,,,,,,
+very_long_distance,hvfhv,2024,3,1404,,1.0,2024-03-01 01:53:55,2024-03-01 04:17:28,134.57,8613.0,0.0,442.24999999999994,0.0,False,data/raw/2024/Mar/fhvhv_tripdata_2024-03.parquet
+very_long_distance,hvfhv,2024,3,1404,,2.0,2024-03-01 02:39:14,2024-03-01 04:55:52,106.966,8198.0,0.0,332.97,0.0,False,data/raw/2024/Mar/fhvhv_tripdata_2024-03.parquet
+very_long_distance,hvfhv,2024,3,1404,,3.0,2024-03-01 06:29:36,2024-03-01 09:05:20,141.89,9344.0,0.0,631.21,0.0,False,data/raw/2024/Mar/fhvhv_tripdata_2024-03.parquet
+very_long_distance,hvfhv,2024,3,1404,,4.0,2024-03-01 06:33:50,2024-03-01 09:00:32,134.48,8802.0,0.0,437.91,0.0,False,data/raw/2024/Mar/fhvhv_tripdata_2024-03.parquet
+very_long_distance,hvfhv,2024,3,1404,,5.0,2024-03-01 07:20:54,2024-03-01 09:25:01,125.14,7447.0,0.0,418.46,0.0,False,data/raw/2024/Mar/fhvhv_tripdata_2024-03.parquet
+negative_cbd_congestion_fee,hvfhv,2024,4,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+non_positive_passenger_cost_pretip,hvfhv,2024,4,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+zero_distance,hvfhv,2024,4,2506,,1.0,2024-04-01 01:01:48,2024-04-01 01:04:27,0.0,159.0,0.0,6.65,0.0,False,data/raw/2024/Apr/fhvhv_tripdata_2024-04.parquet
+zero_distance,hvfhv,2024,4,2506,,2.0,2024-04-01 01:59:34,2024-04-01 02:09:29,0.0,595.0,0.0,9.42,0.0,False,data/raw/2024/Apr/fhvhv_tripdata_2024-04.parquet
+zero_distance,hvfhv,2024,4,2506,,3.0,2024-04-01 01:22:22,2024-04-01 01:28:03,0.0,341.0,0.0,8.45,0.0,False,data/raw/2024/Apr/fhvhv_tripdata_2024-04.parquet
+zero_distance,hvfhv,2024,4,2506,,4.0,2024-04-01 01:38:29,2024-04-01 01:40:37,0.0,128.0,0.0,6.42,0.0,False,data/raw/2024/Apr/fhvhv_tripdata_2024-04.parquet
+zero_distance,hvfhv,2024,4,2506,,5.0,2024-04-01 03:45:50,2024-04-01 03:48:26,0.0,156.0,0.0,5.9,0.0,False,data/raw/2024/Apr/fhvhv_tripdata_2024-04.parquet
+very_long_duration,hvfhv,2024,4,0,No rows matching this QC flag.,,,,,,,,,,
+very_long_distance,hvfhv,2024,4,1442,,1.0,2024-04-01 01:12:46,2024-04-01 03:36:40,100.483,8634.0,0.0,344.92,0.0,False,data/raw/2024/Apr/fhvhv_tripdata_2024-04.parquet
+very_long_distance,hvfhv,2024,4,1442,,2.0,2024-04-01 02:58:17,2024-04-01 04:51:32,105.6,6795.0,0.0,357.09999999999997,0.0,False,data/raw/2024/Apr/fhvhv_tripdata_2024-04.parquet
+very_long_distance,hvfhv,2024,4,1442,,3.0,2024-04-01 03:52:21,2024-04-01 05:46:26,100.16,6845.0,0.0,354.56000000000006,0.0,False,data/raw/2024/Apr/fhvhv_tripdata_2024-04.parquet
+very_long_distance,hvfhv,2024,4,1442,,4.0,2024-04-01 03:20:03,2024-04-01 06:03:06,133.293,9783.0,0.0,376.34000000000003,0.0,False,data/raw/2024/Apr/fhvhv_tripdata_2024-04.parquet
+very_long_distance,hvfhv,2024,4,1442,,5.0,2024-04-01 06:51:47,2024-04-01 09:19:03,114.34,8836.0,0.0,442.21,0.0,False,data/raw/2024/Apr/fhvhv_tripdata_2024-04.parquet
+negative_cbd_congestion_fee,hvfhv,2024,5,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+non_positive_passenger_cost_pretip,hvfhv,2024,5,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+zero_distance,hvfhv,2024,5,2509,,1.0,2024-05-01 01:09:53,2024-05-01 01:11:54,0.0,121.0,0.0,6.09,0.0,False,data/raw/2024/May/fhvhv_tripdata_2024-05.parquet
+zero_distance,hvfhv,2024,5,2509,,2.0,2024-05-01 01:58:50,2024-05-01 02:01:10,0.0,140.0,0.0,8.030000000000001,0.0,False,data/raw/2024/May/fhvhv_tripdata_2024-05.parquet
+zero_distance,hvfhv,2024,5,2509,,3.0,2024-05-01 01:49:22,2024-05-01 01:52:23,0.0,181.0,0.0,18.03,0.0,False,data/raw/2024/May/fhvhv_tripdata_2024-05.parquet
+zero_distance,hvfhv,2024,5,2509,,4.0,2024-05-01 02:22:32,2024-05-01 02:35:04,0.0,752.0,0.0,10.2,0.0,False,data/raw/2024/May/fhvhv_tripdata_2024-05.parquet
+zero_distance,hvfhv,2024,5,2509,,5.0,2024-05-01 04:46:10,2024-05-01 04:48:34,0.0,144.0,0.0,6.16,0.0,False,data/raw/2024/May/fhvhv_tripdata_2024-05.parquet
+very_long_duration,hvfhv,2024,5,0,No rows matching this QC flag.,,,,,,,,,,
+very_long_distance,hvfhv,2024,5,1731,,1.0,2024-05-01 00:18:46,2024-05-01 02:24:34,109.83,7548.0,0.0,371.36,0.0,False,data/raw/2024/May/fhvhv_tripdata_2024-05.parquet
+very_long_distance,hvfhv,2024,5,1731,,2.0,2024-05-01 04:57:54,2024-05-01 06:52:06,111.724,6852.0,0.0,336.71,0.0,False,data/raw/2024/May/fhvhv_tripdata_2024-05.parquet
+very_long_distance,hvfhv,2024,5,1731,,3.0,2024-05-01 05:31:01,2024-05-01 07:59:43,118.22,8922.0,0.0,395.28000000000003,0.0,False,data/raw/2024/May/fhvhv_tripdata_2024-05.parquet
+very_long_distance,hvfhv,2024,5,1731,,4.0,2024-05-01 05:17:26,2024-05-01 08:16:23,100.89,10737.0,0.0,478.65,0.0,False,data/raw/2024/May/fhvhv_tripdata_2024-05.parquet
+very_long_distance,hvfhv,2024,5,1731,,5.0,2024-05-01 07:36:07,2024-05-01 09:41:57,102.08,7550.0,0.0,437.29,0.0,False,data/raw/2024/May/fhvhv_tripdata_2024-05.parquet
+negative_cbd_congestion_fee,hvfhv,2024,6,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+non_positive_passenger_cost_pretip,hvfhv,2024,6,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+zero_distance,hvfhv,2024,6,2652,,1.0,2024-06-01 00:07:42,2024-06-01 00:08:40,0.0,58.0,0.0,9.809999999999999,0.0,False,data/raw/2024/June/fhvhv_tripdata_2024-06.parquet
+zero_distance,hvfhv,2024,6,2652,,2.0,2024-06-01 00:22:28,2024-06-01 00:24:54,0.0,146.0,0.0,27.18,0.0,False,data/raw/2024/June/fhvhv_tripdata_2024-06.parquet
+zero_distance,hvfhv,2024,6,2652,,3.0,2024-06-01 00:32:57,2024-06-01 00:37:48,0.0,291.0,0.0,7.83,0.0,False,data/raw/2024/June/fhvhv_tripdata_2024-06.parquet
+zero_distance,hvfhv,2024,6,2652,,4.0,2024-06-01 01:55:46,2024-06-01 01:57:02,0.0,76.0,0.0,7.990000000000001,0.0,False,data/raw/2024/June/fhvhv_tripdata_2024-06.parquet
+zero_distance,hvfhv,2024,6,2652,,5.0,2024-06-01 01:28:55,2024-06-01 01:31:31,0.0,156.0,0.0,6.42,0.0,False,data/raw/2024/June/fhvhv_tripdata_2024-06.parquet
+very_long_duration,hvfhv,2024,6,0,No rows matching this QC flag.,,,,,,,,,,
+very_long_distance,hvfhv,2024,6,2175,,1.0,2024-06-01 00:26:42,2024-06-01 03:04:10,133.764,9448.0,0.0,120.21,0.0,False,data/raw/2024/June/fhvhv_tripdata_2024-06.parquet
+very_long_distance,hvfhv,2024,6,2175,,2.0,2024-06-01 00:57:32,2024-06-01 03:16:48,106.59,8356.0,0.0,336.03,0.0,False,data/raw/2024/June/fhvhv_tripdata_2024-06.parquet
+very_long_distance,hvfhv,2024,6,2175,,3.0,2024-06-01 00:22:38,2024-06-01 02:19:00,101.256,6982.0,0.0,264.98999999999995,0.0,False,data/raw/2024/June/fhvhv_tripdata_2024-06.parquet
+very_long_distance,hvfhv,2024,6,2175,,4.0,2024-06-01 01:17:43,2024-06-01 03:45:32,133.47,8869.0,0.0,434.93,0.0,False,data/raw/2024/June/fhvhv_tripdata_2024-06.parquet
+very_long_distance,hvfhv,2024,6,2175,,5.0,2024-06-01 01:26:25,2024-06-01 04:32:29,212.04,11164.0,0.0,800.35,0.0,False,data/raw/2024/June/fhvhv_tripdata_2024-06.parquet
+negative_cbd_congestion_fee,hvfhv,2025,2,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+non_positive_passenger_cost_pretip,hvfhv,2025,2,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+zero_distance,hvfhv,2025,2,2465,,1.0,2025-02-01 00:34:48,2025-02-01 01:03:32,0.0,1724.0,0.0,24.959999999999997,0.0,False,data/raw/2025/Feb/fhvhv_tripdata_2025-02.parquet
+zero_distance,hvfhv,2025,2,2465,,2.0,2025-02-01 00:23:07,2025-02-01 00:30:54,0.0,467.0,0.0,8.809999999999999,0.0,False,data/raw/2025/Feb/fhvhv_tripdata_2025-02.parquet
+zero_distance,hvfhv,2025,2,2465,,3.0,2025-02-01 00:10:37,2025-02-01 00:16:38,0.0,361.0,0.0,11.959999999999999,0.0,False,data/raw/2025/Feb/fhvhv_tripdata_2025-02.parquet
+zero_distance,hvfhv,2025,2,2465,,4.0,2025-02-01 00:13:39,2025-02-01 00:14:25,0.0,46.0,0.0,13.2,0.0,False,data/raw/2025/Feb/fhvhv_tripdata_2025-02.parquet
+zero_distance,hvfhv,2025,2,2465,,5.0,2025-02-01 00:02:18,2025-02-01 00:05:55,0.0,217.0,1.5,19.5,0.07692307692307693,True,data/raw/2025/Feb/fhvhv_tripdata_2025-02.parquet
+very_long_duration,hvfhv,2025,2,0,No rows matching this QC flag.,,,,,,,,,,
+very_long_distance,hvfhv,2025,2,1279,,1.0,2025-02-01 00:02:05,2025-02-01 02:38:00,108.939,9355.0,0.0,318.7199999999999,0.0,False,data/raw/2025/Feb/fhvhv_tripdata_2025-02.parquet
+very_long_distance,hvfhv,2025,2,1279,,2.0,2025-02-01 00:37:36,2025-02-01 02:56:54,129.641,8358.0,1.5,395.56999999999994,0.0037919963596834954,True,data/raw/2025/Feb/fhvhv_tripdata_2025-02.parquet
+very_long_distance,hvfhv,2025,2,1279,,3.0,2025-02-01 01:05:37,2025-02-01 03:02:45,100.56,7028.0,1.5,335.96000000000004,0.004464817240147636,True,data/raw/2025/Feb/fhvhv_tripdata_2025-02.parquet
+very_long_distance,hvfhv,2025,2,1279,,4.0,2025-02-01 01:13:32,2025-02-01 04:21:41,148.786,11289.0,1.5,333.81,0.004493574188909859,True,data/raw/2025/Feb/fhvhv_tripdata_2025-02.parquet
+very_long_distance,hvfhv,2025,2,1279,,5.0,2025-02-01 03:29:58,2025-02-01 06:31:03,132.41,10865.0,0.0,450.55,0.0,False,data/raw/2025/Feb/fhvhv_tripdata_2025-02.parquet
+negative_cbd_congestion_fee,hvfhv,2025,3,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+non_positive_passenger_cost_pretip,hvfhv,2025,3,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+zero_distance,hvfhv,2025,3,2180,,1.0,2025-03-01 00:12:33,2025-03-01 00:17:25,0.0,292.0,0.0,7.510000000000001,0.0,False,data/raw/2025/Mar/fhvhv_tripdata_2025-03.parquet
+zero_distance,hvfhv,2025,3,2180,,2.0,2025-03-01 00:32:00,2025-03-01 00:35:25,0.0,205.0,0.0,12.14,0.0,False,data/raw/2025/Mar/fhvhv_tripdata_2025-03.parquet
+zero_distance,hvfhv,2025,3,2180,,3.0,2025-03-01 00:52:40,2025-03-01 00:53:58,0.0,78.0,0.0,47.49,0.0,False,data/raw/2025/Mar/fhvhv_tripdata_2025-03.parquet
+zero_distance,hvfhv,2025,3,2180,,4.0,2025-03-01 00:42:50,2025-03-01 00:45:26,0.0,156.0,0.0,7.53,0.0,False,data/raw/2025/Mar/fhvhv_tripdata_2025-03.parquet
+zero_distance,hvfhv,2025,3,2180,,5.0,2025-03-01 00:15:36,2025-03-01 00:16:31,0.0,55.0,0.0,10.74,0.0,False,data/raw/2025/Mar/fhvhv_tripdata_2025-03.parquet
+very_long_duration,hvfhv,2025,3,0,No rows matching this QC flag.,,,,,,,,,,
+very_long_distance,hvfhv,2025,3,1526,,1.0,2025-03-01 00:05:53,2025-03-01 01:57:57,100.77,6724.0,1.5,319.08,0.004701015419330576,True,data/raw/2025/Mar/fhvhv_tripdata_2025-03.parquet
+very_long_distance,hvfhv,2025,3,1526,,2.0,2025-03-01 01:01:57,2025-03-01 03:00:16,106.28,7099.0,0.0,242.09,0.0,False,data/raw/2025/Mar/fhvhv_tripdata_2025-03.parquet
+very_long_distance,hvfhv,2025,3,1526,,3.0,2025-03-01 01:01:19,2025-03-01 03:05:45,108.64,7466.0,0.0,295.63,0.0,False,data/raw/2025/Mar/fhvhv_tripdata_2025-03.parquet
+very_long_distance,hvfhv,2025,3,1526,,4.0,2025-03-01 04:07:55,2025-03-01 05:48:19,100.12,6024.0,0.0,336.97,0.0,False,data/raw/2025/Mar/fhvhv_tripdata_2025-03.parquet
+very_long_distance,hvfhv,2025,3,1526,,5.0,2025-03-01 04:06:32,2025-03-01 07:41:26,207.62,12895.0,0.0,703.6,0.0,False,data/raw/2025/Mar/fhvhv_tripdata_2025-03.parquet
+negative_cbd_congestion_fee,hvfhv,2025,4,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+non_positive_passenger_cost_pretip,hvfhv,2025,4,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+zero_distance,hvfhv,2025,4,2322,,1.0,2025-04-01 00:14:24,2025-04-01 00:18:30,0.0,246.0,0.0,16.16,0.0,False,data/raw/2025/Apr/fhvhv_tripdata_2025-04.parquet
+zero_distance,hvfhv,2025,4,2322,,2.0,2025-04-01 01:03:55,2025-04-01 01:05:26,0.0,91.0,0.0,6.860000000000001,0.0,False,data/raw/2025/Apr/fhvhv_tripdata_2025-04.parquet
+zero_distance,hvfhv,2025,4,2322,,3.0,2025-04-01 01:57:48,2025-04-01 02:00:54,0.0,186.0,0.0,8.32,0.0,False,data/raw/2025/Apr/fhvhv_tripdata_2025-04.parquet
+zero_distance,hvfhv,2025,4,2322,,4.0,2025-04-01 04:18:13,2025-04-01 04:23:06,0.0,294.0,1.5,21.810000000000002,0.0687757909215956,True,data/raw/2025/Apr/fhvhv_tripdata_2025-04.parquet
+zero_distance,hvfhv,2025,4,2322,,5.0,2025-04-01 05:23:09,2025-04-01 05:34:47,0.0,698.0,0.0,14.260000000000002,0.0,False,data/raw/2025/Apr/fhvhv_tripdata_2025-04.parquet
+very_long_duration,hvfhv,2025,4,0,No rows matching this QC flag.,,,,,,,,,,
+very_long_distance,hvfhv,2025,4,1437,,1.0,2025-04-01 00:52:07,2025-04-01 05:22:06,245.27,16199.0,0.0,1100.03,0.0,False,data/raw/2025/Apr/fhvhv_tripdata_2025-04.parquet
+very_long_distance,hvfhv,2025,4,1437,,2.0,2025-04-01 01:57:40,2025-04-01 03:57:04,110.16,7164.0,0.0,478.02,0.0,False,data/raw/2025/Apr/fhvhv_tripdata_2025-04.parquet
+very_long_distance,hvfhv,2025,4,1437,,3.0,2025-04-01 01:31:24,2025-04-01 06:03:51,228.248,16347.0,0.0,501.19,0.0,False,data/raw/2025/Apr/fhvhv_tripdata_2025-04.parquet
+very_long_distance,hvfhv,2025,4,1437,,4.0,2025-04-01 06:23:11,2025-04-01 08:38:15,114.85,8105.0,0.0,504.82,0.0,False,data/raw/2025/Apr/fhvhv_tripdata_2025-04.parquet
+very_long_distance,hvfhv,2025,4,1437,,5.0,2025-04-01 06:12:38,2025-04-01 08:34:07,121.01,8489.0,1.5,512.1800000000001,0.0029286578937092423,True,data/raw/2025/Apr/fhvhv_tripdata_2025-04.parquet
+negative_cbd_congestion_fee,hvfhv,2025,5,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+non_positive_passenger_cost_pretip,hvfhv,2025,5,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+zero_distance,hvfhv,2025,5,2774,,1.0,2025-05-01 00:44:48,2025-05-01 00:46:57,0.0,128.0,0.0,7.54,0.0,False,data/raw/2025/May/fhvhv_tripdata_2025-05.parquet
+zero_distance,hvfhv,2025,5,2774,,2.0,2025-05-01 00:40:55,2025-05-01 00:46:05,0.0,310.0,1.5,15.440000000000001,0.09715025906735751,True,data/raw/2025/May/fhvhv_tripdata_2025-05.parquet
+zero_distance,hvfhv,2025,5,2774,,3.0,2025-05-01 01:31:56,2025-05-01 01:42:48,0.0,652.0,0.0,11.99,0.0,False,data/raw/2025/May/fhvhv_tripdata_2025-05.parquet
+zero_distance,hvfhv,2025,5,2774,,4.0,2025-05-01 01:15:29,2025-05-01 01:19:48,0.0,259.0,0.0,9.63,0.0,False,data/raw/2025/May/fhvhv_tripdata_2025-05.parquet
+zero_distance,hvfhv,2025,5,2774,,5.0,2025-05-01 03:06:43,2025-05-01 03:13:08,0.0,385.0,1.5,25.290000000000003,0.05931198102016607,True,data/raw/2025/May/fhvhv_tripdata_2025-05.parquet
+very_long_duration,hvfhv,2025,5,0,No rows matching this QC flag.,,,,,,,,,,
+very_long_distance,hvfhv,2025,5,1800,,1.0,2025-05-01 00:57:11,2025-05-01 03:22:43,109.8,8733.0,1.5,539.82,0.0027787040124485937,True,data/raw/2025/May/fhvhv_tripdata_2025-05.parquet
+very_long_distance,hvfhv,2025,5,1800,,2.0,2025-05-01 00:42:27,2025-05-01 02:41:07,118.07,7120.0,0.0,570.24,0.0,False,data/raw/2025/May/fhvhv_tripdata_2025-05.parquet
+very_long_distance,hvfhv,2025,5,1800,,3.0,2025-05-01 00:10:13,2025-05-01 02:20:28,114.21,7815.0,1.5,293.06000000000006,0.005118405787210809,True,data/raw/2025/May/fhvhv_tripdata_2025-05.parquet
+very_long_distance,hvfhv,2025,5,1800,,4.0,2025-05-01 00:08:01,2025-05-01 02:27:56,100.76,8395.0,0.0,289.99,0.0,False,data/raw/2025/May/fhvhv_tripdata_2025-05.parquet
+very_long_distance,hvfhv,2025,5,1800,,5.0,2025-05-01 00:12:40,2025-05-01 03:16:56,169.15,11055.0,0.0,716.14,0.0,False,data/raw/2025/May/fhvhv_tripdata_2025-05.parquet
+negative_cbd_congestion_fee,hvfhv,2025,6,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+non_positive_passenger_cost_pretip,hvfhv,2025,6,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+zero_distance,hvfhv,2025,6,2487,,1.0,2025-06-01 00:46:10,2025-06-01 00:49:58,0.0,228.0,1.5,18.67,0.08034279592929833,True,data/raw/2025/June/fhvhv_tripdata_2025-06.parquet
+zero_distance,hvfhv,2025,6,2487,,2.0,2025-06-01 00:05:37,2025-06-01 00:05:52,0.0,15.0,0.0,7.35,0.0,False,data/raw/2025/June/fhvhv_tripdata_2025-06.parquet
+zero_distance,hvfhv,2025,6,2487,,3.0,2025-06-01 00:30:17,2025-06-01 00:32:24,0.0,127.0,0.0,15.92,0.0,False,data/raw/2025/June/fhvhv_tripdata_2025-06.parquet
+zero_distance,hvfhv,2025,6,2487,,4.0,2025-06-01 00:20:02,2025-06-01 00:22:08,0.0,126.0,0.0,7.2,0.0,False,data/raw/2025/June/fhvhv_tripdata_2025-06.parquet
+zero_distance,hvfhv,2025,6,2487,,5.0,2025-06-01 00:17:40,2025-06-01 00:19:36,0.0,116.0,1.5,10.79,0.13901760889712697,True,data/raw/2025/June/fhvhv_tripdata_2025-06.parquet
+very_long_duration,hvfhv,2025,6,0,No rows matching this QC flag.,,,,,,,,,,
+very_long_distance,hvfhv,2025,6,2213,,1.0,2025-06-01 00:29:07,2025-06-01 02:24:22,108.5,6915.0,1.5,477.42999999999995,0.0031418218377563204,True,data/raw/2025/June/fhvhv_tripdata_2025-06.parquet
+very_long_distance,hvfhv,2025,6,2213,,2.0,2025-06-01 00:42:26,2025-06-01 02:37:58,100.727,6932.0,0.0,253.98999999999998,0.0,False,data/raw/2025/June/fhvhv_tripdata_2025-06.parquet
+very_long_distance,hvfhv,2025,6,2213,,3.0,2025-06-01 00:35:58,2025-06-01 03:06:47,124.613,9049.0,0.0,392.29,0.0,False,data/raw/2025/June/fhvhv_tripdata_2025-06.parquet
+very_long_distance,hvfhv,2025,6,2213,,4.0,2025-06-01 00:49:11,2025-06-01 02:47:39,113.06,7108.0,0.0,372.90999999999997,0.0,False,data/raw/2025/June/fhvhv_tripdata_2025-06.parquet
+very_long_distance,hvfhv,2025,6,2213,,5.0,2025-06-01 00:58:00,2025-06-01 02:46:50,104.893,6530.0,0.0,348.98999999999995,0.0,False,data/raw/2025/June/fhvhv_tripdata_2025-06.parquet
+negative_cbd_congestion_fee,yellow,2024,2,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+non_positive_passenger_cost_pretip,yellow,2024,2,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+zero_distance,yellow,2024,2,63999,,1.0,2024-02-01 00:48:44,2024-02-01 01:42:07,0.0,3203.0,0.0,47.94,0.0,False,data/raw/2024/Feb/yellow_tripdata_2024-02.parquet
+zero_distance,yellow,2024,2,63999,,2.0,2024-02-01 00:46:13,2024-02-01 00:53:28,0.0,435.0,0.0,19.0,0.0,False,data/raw/2024/Feb/yellow_tripdata_2024-02.parquet
+zero_distance,yellow,2024,2,63999,,3.0,2024-02-01 00:28:54,2024-02-01 00:29:18,0.0,24.0,0.0,23.49,0.0,False,data/raw/2024/Feb/yellow_tripdata_2024-02.parquet
+zero_distance,yellow,2024,2,63999,,4.0,2024-02-01 00:51:15,2024-02-01 00:51:29,0.0,14.0,0.0,120.99999999999999,0.0,False,data/raw/2024/Feb/yellow_tripdata_2024-02.parquet
+zero_distance,yellow,2024,2,63999,,5.0,2024-02-01 00:22:22,2024-02-01 00:22:27,0.0,5.0,0.0,12.0,0.0,False,data/raw/2024/Feb/yellow_tripdata_2024-02.parquet
+very_long_duration,yellow,2024,2,12,,1.0,2024-02-02 12:33:38,2024-02-06 11:05:37,0.12,340319.0,0.0,21.75,0.0,False,data/raw/2024/Feb/yellow_tripdata_2024-02.parquet
+very_long_duration,yellow,2024,2,12,,2.0,2024-02-03 03:29:36,2024-02-04 14:45:43,1.05,126967.0,0.0,19.2,0.0,False,data/raw/2024/Feb/yellow_tripdata_2024-02.parquet
+very_long_duration,yellow,2024,2,12,,3.0,2024-02-03 15:53:32,2024-02-05 11:57:24,1.92,158632.0,0.0,17.5,0.0,False,data/raw/2024/Feb/yellow_tripdata_2024-02.parquet
+very_long_duration,yellow,2024,2,12,,4.0,2024-02-04 18:21:09,2024-02-07 18:49:16,1.57,260887.0,0.0,18.9,0.0,False,data/raw/2024/Feb/yellow_tripdata_2024-02.parquet
+very_long_duration,yellow,2024,2,12,,5.0,2024-02-05 07:39:29,2024-02-06 14:10:33,31.46,109864.0,0.0,131.54,0.0,False,data/raw/2024/Feb/yellow_tripdata_2024-02.parquet
+very_long_distance,yellow,2024,2,69,,1.0,2024-02-01 12:41:28,2024-02-01 15:14:27,131.24,9179.0,0.0,509.69,0.0,False,data/raw/2024/Feb/yellow_tripdata_2024-02.parquet
+very_long_distance,yellow,2024,2,69,,2.0,2024-02-04 18:30:20,2024-02-04 20:27:55,108.94,7055.0,0.0,206.69,0.0,False,data/raw/2024/Feb/yellow_tripdata_2024-02.parquet
+very_long_distance,yellow,2024,2,69,,3.0,2024-02-04 20:03:28,2024-02-04 21:58:28,100.7,6900.0,0.0,624.01,0.0,False,data/raw/2024/Feb/yellow_tripdata_2024-02.parquet
+very_long_distance,yellow,2024,2,69,,4.0,2024-02-05 13:54:57,2024-02-05 16:45:08,132.29,10211.0,0.0,409.69,0.0,False,data/raw/2024/Feb/yellow_tripdata_2024-02.parquet
+very_long_distance,yellow,2024,2,69,,5.0,2024-02-05 20:44:11,2024-02-05 23:24:12,127.7,9601.0,0.0,462.89,0.0,False,data/raw/2024/Feb/yellow_tripdata_2024-02.parquet
+negative_cbd_congestion_fee,yellow,2024,3,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+non_positive_passenger_cost_pretip,yellow,2024,3,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+zero_distance,yellow,2024,3,82185,,1.0,2024-03-01 00:25:48,2024-03-01 00:26:04,0.0,16.0,0.0,19.700000000000003,0.0,False,data/raw/2024/Mar/yellow_tripdata_2024-03.parquet
+zero_distance,yellow,2024,3,82185,,2.0,2024-03-01 00:27:52,2024-03-01 00:28:16,0.0,24.0,0.0,8.0,0.0,False,data/raw/2024/Mar/yellow_tripdata_2024-03.parquet
+zero_distance,yellow,2024,3,82185,,3.0,2024-03-01 00:14:27,2024-03-01 00:14:36,0.0,9.0,0.0,21.5,0.0,False,data/raw/2024/Mar/yellow_tripdata_2024-03.parquet
+zero_distance,yellow,2024,3,82185,,4.0,2024-03-01 00:11:40,2024-03-01 00:11:58,0.0,18.0,0.0,82.69,0.0,False,data/raw/2024/Mar/yellow_tripdata_2024-03.parquet
+zero_distance,yellow,2024,3,82185,,5.0,2024-03-01 00:29:39,2024-03-01 00:51:12,0.0,1293.0,0.0,22.700000000000003,0.0,False,data/raw/2024/Mar/yellow_tripdata_2024-03.parquet
+very_long_duration,yellow,2024,3,19,,1.0,2024-03-04 15:11:49,2024-03-06 05:51:19,1.5,139170.0,0.0,16.1,0.0,False,data/raw/2024/Mar/yellow_tripdata_2024-03.parquet
+very_long_duration,yellow,2024,3,19,,2.0,2024-03-05 00:08:44,2024-03-06 10:39:40,0.98,124256.0,0.0,12.2,0.0,False,data/raw/2024/Mar/yellow_tripdata_2024-03.parquet
+very_long_duration,yellow,2024,3,19,,3.0,2024-03-08 11:20:44,2024-03-09 22:22:20,12.43,126096.0,0.0,57.7,0.0,False,data/raw/2024/Mar/yellow_tripdata_2024-03.parquet
+very_long_duration,yellow,2024,3,19,,4.0,2024-03-09 07:13:07,2024-03-11 13:55:34,0.29,196947.0,0.0,7.65,0.0,False,data/raw/2024/Mar/yellow_tripdata_2024-03.parquet
+very_long_duration,yellow,2024,3,19,,5.0,2024-03-13 14:07:39,2024-03-16 10:01:38,9.81,244439.0,0.0,58.84,0.0,False,data/raw/2024/Mar/yellow_tripdata_2024-03.parquet
+very_long_distance,yellow,2024,3,119,,1.0,2024-03-01 13:45:24,2024-03-01 14:27:18,8436.9,2514.0,0.0,31.0,0.0,False,data/raw/2024/Mar/yellow_tripdata_2024-03.parquet
+very_long_distance,yellow,2024,3,119,,2.0,2024-03-01 14:23:30,2024-03-01 17:24:54,110.46,10884.0,0.0,380.01,0.0,False,data/raw/2024/Mar/yellow_tripdata_2024-03.parquet
+very_long_distance,yellow,2024,3,119,,3.0,2024-03-01 14:01:49,2024-03-01 15:05:44,18615.3,3835.0,0.0,39.0,0.0,False,data/raw/2024/Mar/yellow_tripdata_2024-03.parquet
+very_long_distance,yellow,2024,3,119,,4.0,2024-03-01 15:28:09,2024-03-01 16:17:47,53161.6,2978.0,0.0,44.2,0.0,False,data/raw/2024/Mar/yellow_tripdata_2024-03.parquet
+very_long_distance,yellow,2024,3,119,,5.0,2024-03-01 17:11:21,2024-03-01 17:21:36,24640.7,615.0,0.0,20.0,0.0,False,data/raw/2024/Mar/yellow_tripdata_2024-03.parquet
+negative_cbd_congestion_fee,yellow,2024,4,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+non_positive_passenger_cost_pretip,yellow,2024,4,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+zero_distance,yellow,2024,4,40547,,1.0,2024-04-01 00:02:41,2024-04-01 00:02:46,0.0,5.0,0.0,19.5,0.0,False,data/raw/2024/Apr/yellow_tripdata_2024-04.parquet
+zero_distance,yellow,2024,4,40547,,2.0,2024-04-01 00:42:35,2024-04-01 00:43:18,0.0,43.0,0.0,17.0,0.0,False,data/raw/2024/Apr/yellow_tripdata_2024-04.parquet
+zero_distance,yellow,2024,4,40547,,3.0,2024-04-01 00:05:40,2024-04-01 00:05:46,0.0,6.0,0.0,13.5,0.0,False,data/raw/2024/Apr/yellow_tripdata_2024-04.parquet
+zero_distance,yellow,2024,4,40547,,4.0,2024-04-01 00:15:25,2024-04-01 00:15:29,0.0,4.0,0.0,78.5,0.0,False,data/raw/2024/Apr/yellow_tripdata_2024-04.parquet
+zero_distance,yellow,2024,4,40547,,5.0,2024-04-01 00:27:51,2024-04-01 00:37:00,0.0,549.0,0.0,13.6,0.0,False,data/raw/2024/Apr/yellow_tripdata_2024-04.parquet
+very_long_duration,yellow,2024,4,26,,1.0,2024-04-01 21:31:31,2024-04-06 16:19:20,0.38,413269.0,0.0,18.5,0.0,False,data/raw/2024/Apr/yellow_tripdata_2024-04.parquet
+very_long_duration,yellow,2024,4,26,,2.0,2024-04-03 10:50:05,2024-04-07 11:16:05,0.0,347160.0,0.0,4.5,0.0,False,data/raw/2024/Apr/yellow_tripdata_2024-04.parquet
+very_long_duration,yellow,2024,4,26,,3.0,2024-04-03 22:17:03,2024-04-06 18:41:40,12.56,246277.0,0.0,53.45,0.0,False,data/raw/2024/Apr/yellow_tripdata_2024-04.parquet
+very_long_duration,yellow,2024,4,26,,4.0,2024-04-05 18:25:35,2024-04-06 18:43:38,9.47,87483.0,0.0,70.35,0.0,False,data/raw/2024/Apr/yellow_tripdata_2024-04.parquet
+very_long_duration,yellow,2024,4,26,,5.0,2024-04-06 03:09:37,2024-04-07 13:02:37,0.0,121980.0,0.0,5.5,0.0,False,data/raw/2024/Apr/yellow_tripdata_2024-04.parquet
+very_long_distance,yellow,2024,4,147,,1.0,2024-04-01 14:22:54,2024-04-01 15:18:00,577.05,3306.0,0.0,74.0,0.0,False,data/raw/2024/Apr/yellow_tripdata_2024-04.parquet
+very_long_distance,yellow,2024,4,147,,2.0,2024-04-03 10:11:21,2024-04-03 11:19:39,5318.34,4098.0,0.0,75.75,0.0,False,data/raw/2024/Apr/yellow_tripdata_2024-04.parquet
+very_long_distance,yellow,2024,4,147,,3.0,2024-04-03 23:11:58,2024-04-04 00:57:28,108.09,6330.0,0.0,747.97,0.0,False,data/raw/2024/Apr/yellow_tripdata_2024-04.parquet
+very_long_distance,yellow,2024,4,147,,4.0,2024-04-04 11:08:04,2024-04-04 11:26:06,5613.35,1082.0,0.0,21.0,0.0,False,data/raw/2024/Apr/yellow_tripdata_2024-04.parquet
+very_long_distance,yellow,2024,4,147,,5.0,2024-04-04 11:16:09,2024-04-04 13:33:18,114.24,8229.0,0.0,359.68999999999994,0.0,False,data/raw/2024/Apr/yellow_tripdata_2024-04.parquet
+negative_cbd_congestion_fee,yellow,2024,5,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+non_positive_passenger_cost_pretip,yellow,2024,5,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+zero_distance,yellow,2024,5,44125,,1.0,2024-05-01 00:43:06,2024-05-01 00:43:40,0.0,34.0,0.0,11.0,0.0,False,data/raw/2024/May/yellow_tripdata_2024-05.parquet
+zero_distance,yellow,2024,5,44125,,2.0,2024-05-01 00:42:36,2024-05-01 00:42:51,0.0,15.0,0.0,21.0,0.0,False,data/raw/2024/May/yellow_tripdata_2024-05.parquet
+zero_distance,yellow,2024,5,44125,,3.0,2024-05-01 00:29:54,2024-05-01 00:30:01,0.0,7.0,0.0,21.0,0.0,False,data/raw/2024/May/yellow_tripdata_2024-05.parquet
+zero_distance,yellow,2024,5,44125,,4.0,2024-05-01 00:12:05,2024-05-01 00:12:13,0.0,8.0,0.0,110.0,0.0,False,data/raw/2024/May/yellow_tripdata_2024-05.parquet
+zero_distance,yellow,2024,5,44125,,5.0,2024-05-01 00:14:39,2024-05-01 00:14:53,0.0,14.0,0.0,7.25,0.0,False,data/raw/2024/May/yellow_tripdata_2024-05.parquet
+very_long_duration,yellow,2024,5,15,,1.0,2024-05-01 13:13:42,2024-05-02 18:29:45,0.0,105363.0,0.0,4.5,0.0,False,data/raw/2024/May/yellow_tripdata_2024-05.parquet
+very_long_duration,yellow,2024,5,15,,2.0,2024-05-02 11:17:09,2024-05-06 18:10:49,0.0,370420.0,0.0,4.5,0.0,False,data/raw/2024/May/yellow_tripdata_2024-05.parquet
+very_long_duration,yellow,2024,5,15,,3.0,2024-05-02 12:31:37,2024-05-08 10:59:18,0.0,512861.0,0.0,4.5,0.0,False,data/raw/2024/May/yellow_tripdata_2024-05.parquet
+very_long_duration,yellow,2024,5,15,,4.0,2024-05-02 18:31:07,2024-05-04 07:43:19,0.0,133932.0,0.0,9.8,0.0,False,data/raw/2024/May/yellow_tripdata_2024-05.parquet
+very_long_duration,yellow,2024,5,15,,5.0,2024-05-05 19:24:22,2024-05-07 06:10:10,0.43,125148.0,0.0,11.9,0.0,False,data/raw/2024/May/yellow_tripdata_2024-05.parquet
+very_long_distance,yellow,2024,5,148,,1.0,2024-05-01 12:10:15,2024-05-01 17:00:14,116.76,17399.0,0.0,316.38,0.0,False,data/raw/2024/May/yellow_tripdata_2024-05.parquet
+very_long_distance,yellow,2024,5,148,,2.0,2024-05-02 15:40:24,2024-05-02 18:16:00,107.52,9336.0,0.0,390.01,0.0,False,data/raw/2024/May/yellow_tripdata_2024-05.parquet
+very_long_distance,yellow,2024,5,148,,3.0,2024-05-03 12:09:20,2024-05-03 12:54:56,324.0,2736.0,0.0,35.0,0.0,False,data/raw/2024/May/yellow_tripdata_2024-05.parquet
+very_long_distance,yellow,2024,5,148,,4.0,2024-05-05 00:57:11,2024-05-05 01:13:28,4003.25,977.0,0.0,24.0,0.0,False,data/raw/2024/May/yellow_tripdata_2024-05.parquet
+very_long_distance,yellow,2024,5,148,,5.0,2024-05-05 02:24:58,2024-05-05 04:09:48,101.7,6290.0,0.0,371.0,0.0,False,data/raw/2024/May/yellow_tripdata_2024-05.parquet
+negative_cbd_congestion_fee,yellow,2024,6,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+non_positive_passenger_cost_pretip,yellow,2024,6,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+zero_distance,yellow,2024,6,47465,,1.0,2024-06-01 00:10:32,2024-06-01 00:14:36,0.0,244.0,0.0,10.799999999999999,0.0,False,data/raw/2024/June/yellow_tripdata_2024-06.parquet
+zero_distance,yellow,2024,6,47465,,2.0,2024-06-01 00:21:04,2024-06-01 00:34:43,0.0,819.0,0.0,17.1,0.0,False,data/raw/2024/June/yellow_tripdata_2024-06.parquet
+zero_distance,yellow,2024,6,47465,,3.0,2024-06-01 00:35:58,2024-06-01 00:50:22,0.0,864.0,0.0,17.8,0.0,False,data/raw/2024/June/yellow_tripdata_2024-06.parquet
+zero_distance,yellow,2024,6,47465,,4.0,2024-06-01 00:55:02,2024-06-01 01:00:56,0.0,354.0,0.0,11.5,0.0,False,data/raw/2024/June/yellow_tripdata_2024-06.parquet
+zero_distance,yellow,2024,6,47465,,5.0,2024-06-01 00:11:04,2024-06-01 00:14:54,0.0,230.0,0.0,10.1,0.0,False,data/raw/2024/June/yellow_tripdata_2024-06.parquet
+very_long_duration,yellow,2024,6,20,,1.0,2024-06-01 15:40:44,2024-06-03 09:29:30,0.08,150526.0,0.0,8.4,0.0,False,data/raw/2024/June/yellow_tripdata_2024-06.parquet
+very_long_duration,yellow,2024,6,20,,2.0,2024-06-06 16:18:13,2024-06-11 23:56:51,8.19,459518.0,0.0,66.25,0.0,False,data/raw/2024/June/yellow_tripdata_2024-06.parquet
+very_long_duration,yellow,2024,6,20,,3.0,2024-06-07 15:27:42,2024-06-10 16:28:28,0.0,262846.0,0.0,4.5,0.0,False,data/raw/2024/June/yellow_tripdata_2024-06.parquet
+very_long_duration,yellow,2024,6,20,,4.0,2024-06-08 19:16:26,2024-06-10 07:47:13,14.19,131447.0,0.0,58.05,0.0,False,data/raw/2024/June/yellow_tripdata_2024-06.parquet
+very_long_duration,yellow,2024,6,20,,5.0,2024-06-09 02:26:33,2024-06-10 11:18:06,17.72,118293.0,0.0,80.1,0.0,False,data/raw/2024/June/yellow_tripdata_2024-06.parquet
+very_long_distance,yellow,2024,6,162,,1.0,2024-06-01 01:18:01,2024-06-01 03:26:35,133.79,7714.0,0.0,335.2,0.0,False,data/raw/2024/June/yellow_tripdata_2024-06.parquet
+very_long_distance,yellow,2024,6,162,,2.0,2024-06-01 16:39:17,2024-06-01 19:55:00,154.76,11743.0,0.0,402.75,0.0,False,data/raw/2024/June/yellow_tripdata_2024-06.parquet
+very_long_distance,yellow,2024,6,162,,3.0,2024-06-01 21:14:55,2024-06-01 23:42:07,111.38,8832.0,0.0,490.51,0.0,False,data/raw/2024/June/yellow_tripdata_2024-06.parquet
+very_long_distance,yellow,2024,6,162,,4.0,2024-06-01 22:36:40,2024-06-02 01:19:13,134.15,9753.0,0.0,871.91,0.0,False,data/raw/2024/June/yellow_tripdata_2024-06.parquet
+very_long_distance,yellow,2024,6,162,,5.0,2024-06-02 15:26:03,2024-06-02 17:36:53,110.8,7850.0,0.0,30.259999999999998,0.0,False,data/raw/2024/June/yellow_tripdata_2024-06.parquet
+negative_cbd_congestion_fee,yellow,2025,2,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+non_positive_passenger_cost_pretip,yellow,2025,2,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+zero_distance,yellow,2025,2,95006,,1.0,2025-02-01 00:30:36,2025-02-01 00:31:28,0.0,52.0,0.75,8.75,0.08571428571428572,True,data/raw/2025/Feb/yellow_tripdata_2025-02.parquet
+zero_distance,yellow,2025,2,95006,,2.0,2025-02-01 00:35:53,2025-02-01 00:35:58,0.0,5.0,0.75,16.25,0.046153846153846156,True,data/raw/2025/Feb/yellow_tripdata_2025-02.parquet
+zero_distance,yellow,2025,2,95006,,3.0,2025-02-01 00:24:49,2025-02-01 00:26:15,0.0,86.0,0.75,8.75,0.08571428571428572,True,data/raw/2025/Feb/yellow_tripdata_2025-02.parquet
+zero_distance,yellow,2025,2,95006,,4.0,2025-02-01 00:41:32,2025-02-01 00:41:43,0.0,11.0,0.75,74.75,0.010033444816053512,True,data/raw/2025/Feb/yellow_tripdata_2025-02.parquet
+zero_distance,yellow,2025,2,95006,,5.0,2025-02-01 00:17:51,2025-02-01 00:19:34,0.0,103.0,0.75,84.75,0.008849557522123894,True,data/raw/2025/Feb/yellow_tripdata_2025-02.parquet
+very_long_duration,yellow,2025,2,16,,1.0,2025-02-02 09:01:35,2025-02-03 10:58:01,1.72,93386.0,0.75,16.15,0.04643962848297214,True,data/raw/2025/Feb/yellow_tripdata_2025-02.parquet
+very_long_duration,yellow,2025,2,16,,2.0,2025-02-03 11:02:01,2025-02-04 12:57:17,0.0,93316.0,0.0,4.5,0.0,False,data/raw/2025/Feb/yellow_tripdata_2025-02.parquet
+very_long_duration,yellow,2025,2,16,,3.0,2025-02-05 08:24:54,2025-02-08 16:26:22,3.22,288088.0,0.0,17.8,0.0,False,data/raw/2025/Feb/yellow_tripdata_2025-02.parquet
+very_long_duration,yellow,2025,2,16,,4.0,2025-02-05 12:18:24,2025-02-06 12:40:28,0.0,87724.0,0.0,4.5,0.0,False,data/raw/2025/Feb/yellow_tripdata_2025-02.parquet
+very_long_duration,yellow,2025,2,16,,5.0,2025-02-09 00:22:39,2025-02-10 12:56:34,3.91,131635.0,0.75,25.55,0.029354207436399216,True,data/raw/2025/Feb/yellow_tripdata_2025-02.parquet
+very_long_distance,yellow,2025,2,167,,1.0,2025-02-01 02:21:53,2025-02-01 05:21:22,131.38,10769.0,0.75,515.81,0.0014540237684418683,True,data/raw/2025/Feb/yellow_tripdata_2025-02.parquet
+very_long_distance,yellow,2025,2,167,,2.0,2025-02-01 06:38:44,2025-02-01 08:26:11,106.94,6447.0,0.0,682.24,0.0,False,data/raw/2025/Feb/yellow_tripdata_2025-02.parquet
+very_long_distance,yellow,2025,2,167,,3.0,2025-02-01 17:06:22,2025-02-01 19:17:50,112.35,7888.0,0.0,733.69,0.0,False,data/raw/2025/Feb/yellow_tripdata_2025-02.parquet
+very_long_distance,yellow,2025,2,167,,4.0,2025-02-01 18:32:52,2025-02-01 21:03:23,114.01,9031.0,0.0,375.75,0.0,False,data/raw/2025/Feb/yellow_tripdata_2025-02.parquet
+very_long_distance,yellow,2025,2,167,,5.0,2025-02-02 00:25:09,2025-02-02 07:28:34,270.2,25405.0,0.0,1869.25,0.0,False,data/raw/2025/Feb/yellow_tripdata_2025-02.parquet
+negative_cbd_congestion_fee,yellow,2025,3,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+non_positive_passenger_cost_pretip,yellow,2025,3,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+zero_distance,yellow,2025,3,97721,,1.0,2025-03-01 00:51:04,2025-03-01 00:53:29,0.0,145.0,0.0,14.0,0.0,False,data/raw/2025/Mar/yellow_tripdata_2025-03.parquet
+zero_distance,yellow,2025,3,97721,,2.0,2025-03-01 00:02:22,2025-03-01 01:14:59,0.0,4357.0,0.0,59.94,0.0,False,data/raw/2025/Mar/yellow_tripdata_2025-03.parquet
+zero_distance,yellow,2025,3,97721,,3.0,2025-03-01 00:15:01,2025-03-01 00:15:17,0.0,16.0,0.75,8.75,0.08571428571428572,True,data/raw/2025/Mar/yellow_tripdata_2025-03.parquet
+zero_distance,yellow,2025,3,97721,,4.0,2025-03-01 00:35:56,2025-03-01 00:36:00,0.0,4.0,0.75,17.25,0.043478260869565216,True,data/raw/2025/Mar/yellow_tripdata_2025-03.parquet
+zero_distance,yellow,2025,3,97721,,5.0,2025-03-01 00:46:16,2025-03-01 00:46:29,0.0,13.0,0.75,8.75,0.08571428571428572,True,data/raw/2025/Mar/yellow_tripdata_2025-03.parquet
+very_long_duration,yellow,2025,3,11,,1.0,2025-03-01 01:20:23,2025-03-04 11:58:13,1.62,297470.0,0.75,17.85,0.04201680672268907,True,data/raw/2025/Mar/yellow_tripdata_2025-03.parquet
+very_long_duration,yellow,2025,3,11,,2.0,2025-03-05 19:47:05,2025-03-07 13:41:26,3.92,150861.0,0.75,28.45,0.026362038664323375,True,data/raw/2025/Mar/yellow_tripdata_2025-03.parquet
+very_long_duration,yellow,2025,3,11,,3.0,2025-03-06 12:46:13,2025-03-10 07:37:39,0.83,327086.0,0.75,13.35,0.056179775280898875,True,data/raw/2025/Mar/yellow_tripdata_2025-03.parquet
+very_long_duration,yellow,2025,3,11,,4.0,2025-03-07 11:15:36,2025-03-09 05:10:12,1.08,150876.0,0.0,12.95,0.0,False,data/raw/2025/Mar/yellow_tripdata_2025-03.parquet
+very_long_duration,yellow,2025,3,11,,5.0,2025-03-22 03:11:02,2025-03-26 11:46:52,14.55,376550.0,0.75,78.69,0.009531071292413268,True,data/raw/2025/Mar/yellow_tripdata_2025-03.parquet
+very_long_distance,yellow,2025,3,206,,1.0,2025-03-01 09:36:02,2025-03-01 10:04:56,133.5,1734.0,0.0,51.94,0.0,False,data/raw/2025/Mar/yellow_tripdata_2025-03.parquet
+very_long_distance,yellow,2025,3,206,,2.0,2025-03-01 15:14:56,2025-03-02 14:32:09,251.45,83833.0,0.75,1694.31,0.000442658073197939,True,data/raw/2025/Mar/yellow_tripdata_2025-03.parquet
+very_long_distance,yellow,2025,3,206,,3.0,2025-03-02 06:12:12,2025-03-02 09:32:44,190.5,12032.0,0.0,693.94,0.0,False,data/raw/2025/Mar/yellow_tripdata_2025-03.parquet
+very_long_distance,yellow,2025,3,206,,4.0,2025-03-03 08:46:31,2025-03-03 08:58:31,69735.19,720.0,0.0,18.36,0.0,False,data/raw/2025/Mar/yellow_tripdata_2025-03.parquet
+very_long_distance,yellow,2025,3,206,,5.0,2025-03-03 10:23:18,2025-03-03 10:46:43,227.4,1405.0,0.0,17.0,0.0,False,data/raw/2025/Mar/yellow_tripdata_2025-03.parquet
+negative_cbd_congestion_fee,yellow,2025,4,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+non_positive_passenger_cost_pretip,yellow,2025,4,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+zero_distance,yellow,2025,4,85407,,1.0,2025-04-01 00:36:37,2025-04-01 01:05:35,0.0,1738.0,0.0,31.0,0.0,False,data/raw/2025/Apr/yellow_tripdata_2025-04.parquet
+zero_distance,yellow,2025,4,85407,,2.0,2025-04-01 00:33:30,2025-04-01 00:33:34,0.0,4.0,0.75,8.75,0.08571428571428572,True,data/raw/2025/Apr/yellow_tripdata_2025-04.parquet
+zero_distance,yellow,2025,4,85407,,3.0,2025-04-01 00:21:30,2025-04-01 00:47:14,0.0,1544.0,0.0,36.0,0.0,False,data/raw/2025/Apr/yellow_tripdata_2025-04.parquet
+zero_distance,yellow,2025,4,85407,,4.0,2025-04-01 00:12:32,2025-04-01 00:12:47,0.0,15.0,0.0,5.5,0.0,False,data/raw/2025/Apr/yellow_tripdata_2025-04.parquet
+zero_distance,yellow,2025,4,85407,,5.0,2025-04-01 00:45:50,2025-04-01 00:47:57,0.0,127.0,0.75,9.45,0.07936507936507937,True,data/raw/2025/Apr/yellow_tripdata_2025-04.parquet
+very_long_duration,yellow,2025,4,25,,1.0,2025-04-05 01:56:07,2025-04-08 17:12:44,0.39,314197.0,0.75,10.85,0.06912442396313365,True,data/raw/2025/Apr/yellow_tripdata_2025-04.parquet
+very_long_duration,yellow,2025,4,25,,2.0,2025-04-05 01:02:35,2025-04-06 12:32:40,1.97,127805.0,0.0,19.49,0.0,False,data/raw/2025/Apr/yellow_tripdata_2025-04.parquet
+very_long_duration,yellow,2025,4,25,,3.0,2025-04-07 10:09:19,2025-04-08 14:51:19,0.0,103320.0,0.0,4.5,0.0,False,data/raw/2025/Apr/yellow_tripdata_2025-04.parquet
+very_long_duration,yellow,2025,4,25,,4.0,2025-04-07 10:19:28,2025-04-08 10:26:55,0.0,86847.0,0.0,4.5,0.0,False,data/raw/2025/Apr/yellow_tripdata_2025-04.parquet
+very_long_duration,yellow,2025,4,25,,5.0,2025-04-08 12:10:32,2025-04-10 15:04:17,1.8,183225.0,0.0,19.9,0.0,False,data/raw/2025/Apr/yellow_tripdata_2025-04.parquet
+very_long_distance,yellow,2025,4,291,,1.0,2025-04-05 10:33:23,2025-04-05 12:59:37,132.99,8774.0,0.0,520.19,0.0,False,data/raw/2025/Apr/yellow_tripdata_2025-04.parquet
+very_long_distance,yellow,2025,4,291,,2.0,2025-04-06 12:34:55,2025-04-06 13:40:32,475.3,3937.0,0.0,20.0,0.0,False,data/raw/2025/Apr/yellow_tripdata_2025-04.parquet
+very_long_distance,yellow,2025,4,291,,3.0,2025-04-06 19:15:48,2025-04-06 21:45:26,121.2,8978.0,0.0,707.94,0.0,False,data/raw/2025/Apr/yellow_tripdata_2025-04.parquet
+very_long_distance,yellow,2025,4,291,,4.0,2025-04-06 21:47:43,2025-04-06 23:56:13,119.72,7710.0,0.0,701.0,0.0,False,data/raw/2025/Apr/yellow_tripdata_2025-04.parquet
+very_long_distance,yellow,2025,4,291,,5.0,2025-04-07 08:27:44,2025-04-07 08:30:01,7762.1,137.0,0.0,17.0,0.0,False,data/raw/2025/Apr/yellow_tripdata_2025-04.parquet
+negative_cbd_congestion_fee,yellow,2025,5,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+non_positive_passenger_cost_pretip,yellow,2025,5,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+zero_distance,yellow,2025,5,129177,,1.0,2025-05-01 00:28:46,2025-05-01 01:02:22,0.0,2016.0,0.0,33.0,0.0,False,data/raw/2025/May/yellow_tripdata_2025-05.parquet
+zero_distance,yellow,2025,5,129177,,2.0,2025-05-01 00:12:41,2025-05-01 00:18:05,0.0,324.0,0.75,12.25,0.061224489795918366,True,data/raw/2025/May/yellow_tripdata_2025-05.parquet
+zero_distance,yellow,2025,5,129177,,3.0,2025-05-01 00:12:09,2025-05-01 00:21:09,0.0,540.0,0.0,19.0,0.0,False,data/raw/2025/May/yellow_tripdata_2025-05.parquet
+zero_distance,yellow,2025,5,129177,,4.0,2025-05-01 00:02:58,2025-05-01 00:03:10,0.0,12.0,0.75,14.25,0.05263157894736842,True,data/raw/2025/May/yellow_tripdata_2025-05.parquet
+zero_distance,yellow,2025,5,129177,,5.0,2025-05-01 00:07:40,2025-05-01 00:07:49,0.0,9.0,0.75,8.75,0.08571428571428572,True,data/raw/2025/May/yellow_tripdata_2025-05.parquet
+very_long_duration,yellow,2025,5,26,,1.0,2025-05-01 13:07:55,2025-05-05 18:51:37,32.84,366222.0,0.75,74.75,0.010033444816053512,True,data/raw/2025/May/yellow_tripdata_2025-05.parquet
+very_long_duration,yellow,2025,5,26,,2.0,2025-05-02 12:48:07,2025-05-05 11:20:11,0.08,253924.0,0.0,24.0,0.0,False,data/raw/2025/May/yellow_tripdata_2025-05.parquet
+very_long_duration,yellow,2025,5,26,,3.0,2025-05-08 12:26:09,2025-05-12 10:44:54,0.0,339525.0,0.0,4.5,0.0,False,data/raw/2025/May/yellow_tripdata_2025-05.parquet
+very_long_duration,yellow,2025,5,26,,4.0,2025-05-09 11:54:59,2025-05-12 12:13:29,0.0,260310.0,0.0,4.5,0.0,False,data/raw/2025/May/yellow_tripdata_2025-05.parquet
+very_long_duration,yellow,2025,5,26,,5.0,2025-05-09 12:09:10,2025-05-12 11:59:25,0.0,258615.0,0.0,4.5,0.0,False,data/raw/2025/May/yellow_tripdata_2025-05.parquet
+very_long_distance,yellow,2025,5,342,,1.0,2025-05-01 03:47:42,2025-05-01 04:35:03,19460.8,2841.0,0.0,56.0,0.0,False,data/raw/2025/May/yellow_tripdata_2025-05.parquet
+very_long_distance,yellow,2025,5,342,,2.0,2025-05-01 03:59:54,2025-05-01 04:35:32,19465.4,2138.0,0.0,61.94,0.0,False,data/raw/2025/May/yellow_tripdata_2025-05.parquet
+very_long_distance,yellow,2025,5,342,,3.0,2025-05-01 05:20:26,2025-05-01 06:11:53,19459.5,3087.0,0.0,59.94,0.0,False,data/raw/2025/May/yellow_tripdata_2025-05.parquet
+very_long_distance,yellow,2025,5,342,,4.0,2025-05-01 06:23:32,2025-05-01 07:15:31,19456.9,3119.0,0.0,38.0,0.0,False,data/raw/2025/May/yellow_tripdata_2025-05.parquet
+very_long_distance,yellow,2025,5,342,,5.0,2025-05-01 06:39:32,2025-05-01 08:06:28,19460.7,5216.0,0.0,49.0,0.0,False,data/raw/2025/May/yellow_tripdata_2025-05.parquet
+negative_cbd_congestion_fee,yellow,2025,6,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+non_positive_passenger_cost_pretip,yellow,2025,6,0,No rows in standardized output (expected for dropped issues).,,,,,,,,,,
+zero_distance,yellow,2025,6,127410,,1.0,2025-06-01 00:41:47,2025-06-01 01:11:49,0.0,1802.0,0.0,39.0,0.0,False,data/raw/2025/June/yellow_tripdata_2025-06.parquet
+zero_distance,yellow,2025,6,127410,,2.0,2025-06-01 00:08:56,2025-06-01 00:33:46,0.0,1490.0,0.75,25.55,0.029354207436399216,True,data/raw/2025/June/yellow_tripdata_2025-06.parquet
+zero_distance,yellow,2025,6,127410,,3.0,2025-06-01 00:30:21,2025-06-01 00:30:28,0.0,7.0,0.0,74.0,0.0,False,data/raw/2025/June/yellow_tripdata_2025-06.parquet
+zero_distance,yellow,2025,6,127410,,4.0,2025-06-01 00:08:38,2025-06-01 00:21:12,0.0,754.0,0.0,23.0,0.0,False,data/raw/2025/June/yellow_tripdata_2025-06.parquet
+zero_distance,yellow,2025,6,127410,,5.0,2025-06-01 00:25:55,2025-06-01 00:48:16,0.0,1341.0,0.75,24.15,0.031055900621118016,True,data/raw/2025/June/yellow_tripdata_2025-06.parquet
+very_long_duration,yellow,2025,6,20,,1.0,2025-06-05 15:57:47,2025-06-06 19:46:08,0.0,100101.0,0.0,4.5,0.0,False,data/raw/2025/June/yellow_tripdata_2025-06.parquet
+very_long_duration,yellow,2025,6,20,,2.0,2025-06-13 00:15:50,2025-06-17 15:12:16,0.0,399386.0,0.0,5.5,0.0,False,data/raw/2025/June/yellow_tripdata_2025-06.parquet
+very_long_duration,yellow,2025,6,20,,3.0,2025-06-16 23:09:13,2025-06-19 11:37:34,7.09,217701.0,0.0,46.1,0.0,False,data/raw/2025/June/yellow_tripdata_2025-06.parquet
+very_long_duration,yellow,2025,6,20,,4.0,2025-06-21 12:50:20,2025-06-25 09:15:46,339.07,332726.0,0.0,2502.94,0.0,False,data/raw/2025/June/yellow_tripdata_2025-06.parquet
+very_long_duration,yellow,2025,6,20,,5.0,2025-06-21 13:59:40,2025-06-23 05:03:43,3.79,140643.0,0.75,31.55,0.02377179080824089,True,data/raw/2025/June/yellow_tripdata_2025-06.parquet
+very_long_distance,yellow,2025,6,232,,1.0,2025-06-01 14:45:41,2025-06-01 17:11:01,118.84,8720.0,0.0,702.75,0.0,False,data/raw/2025/June/yellow_tripdata_2025-06.parquet
+very_long_distance,yellow,2025,6,232,,2.0,2025-06-01 17:14:35,2025-06-01 17:40:15,5009.68,1540.0,0.75,58.89,0.012735608762098827,True,data/raw/2025/June/yellow_tripdata_2025-06.parquet
+very_long_distance,yellow,2025,6,232,,3.0,2025-06-02 02:16:01,2025-06-02 06:01:07,211.8,13506.0,0.75,651.75,0.0011507479861910242,True,data/raw/2025/June/yellow_tripdata_2025-06.parquet
+very_long_distance,yellow,2025,6,232,,4.0,2025-06-03 19:07:49,2025-06-03 19:24:40,9816.96,1011.0,0.75,148.85,0.0050386294927779645,True,data/raw/2025/June/yellow_tripdata_2025-06.parquet
+very_long_distance,yellow,2025,6,232,,5.0,2025-06-03 21:12:42,2025-06-03 23:58:39,116.08,9957.0,0.0,381.0,0.0,False,data/raw/2025/June/yellow_tripdata_2025-06.parquet

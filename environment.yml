@@ -1,0 +1,9 @@
+name: congestion-pricing
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.11
+  - pandas>=2.0
+  - pyarrow>=14.0
+  - numpy>=1.26
