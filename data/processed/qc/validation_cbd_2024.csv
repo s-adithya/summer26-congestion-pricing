@@ -1,0 +1,11 @@
+relative_path,service_type,year,month,rows_in_file,nonzero_cbd_2024_count,cbd_2024_ok
+data/processed/00_standardized_trips/hvfhv/2024/02.parquet,hvfhv,2024,2,19352998,0,True
+data/processed/00_standardized_trips/hvfhv/2024/03.parquet,hvfhv,2024,3,21279860,0,True
+data/processed/00_standardized_trips/hvfhv/2024/04.parquet,hvfhv,2024,4,19732410,0,True
+data/processed/00_standardized_trips/hvfhv/2024/05.parquet,hvfhv,2024,5,20704206,0,True
+data/processed/00_standardized_trips/hvfhv/2024/06.parquet,hvfhv,2024,6,20122914,0,True
+data/processed/00_standardized_trips/yellow/2024/02.parquet,yellow,2024,2,2970277,0,True
+data/processed/00_standardized_trips/yellow/2024/03.parquet,yellow,2024,3,3536782,0,True
+data/processed/00_standardized_trips/yellow/2024/04.parquet,yellow,2024,4,3469080,0,True
+data/processed/00_standardized_trips/yellow/2024/05.parquet,yellow,2024,5,3673319,0,True
+data/processed/00_standardized_trips/yellow/2024/06.parquet,yellow,2024,6,3488938,0,True

@@ -4,6 +4,12 @@ __pycache__/
 *.pyo
 *.pyd
 .Python
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
 # Jupyter
 .ipynb_checkpoints/
@@ -14,7 +20,7 @@ venv/
 env/
 ENV/
 
-# Environment variables
+# Environment variables and secrets
 .env
 .env.*
 !.env.example
@@ -31,11 +37,27 @@ ENV/
 Thumbs.db
 Desktop.ini
 
-# Data (preserve directory structure)
-data/**
-!data/**/
-!data/**/.gitkeep
+# Logs and local run artifacts
+*.log
 
-# Generated artifacts (preserve directory structure)
-artifacts/**/*
+# --- Data: large TLC parquet files are never committed ---
+*.parquet
+
+# Raw TLC downloads — keep folder structure only
+data/raw/**
+!data/raw/**/
+!data/raw/**/.gitkeep
+
+# Standardized trip parquets — generated locally, too large for git
+data/processed/00_standardized_trips/**
+!data/processed/00_standardized_trips/**/
+!data/processed/00_standardized_trips/**/.gitkeep
+
+# Small QC CSVs and teammate sample — tracked (not ignored)
+#   data/processed/qc/
+#   data/processed/samples/
+
+# Other generated artifacts
+artifacts/**
+!artifacts/**/
 !artifacts/**/.gitkeep

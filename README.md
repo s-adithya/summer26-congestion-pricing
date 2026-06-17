@@ -31,16 +31,34 @@ We seek to understand the impacts of the congestion fee on the different zones m
 
 ## Dataset
 
-The dataset used to train our models is sourced from the [TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page). It contains historical trip records for yellow and green taxis, and high-volume for-hire vehicles (HVFHV), with coverage extending back to February 2019 and including many trips before that date.
+The dataset used in this project is sourced from the [TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page). It contains historical trip records for yellow and green taxis, for-hire vehicles (FHV), and high-volume for-hire vehicles (HVFHV).
 
-| Source               | Description                                                                      |
-| -------------------- | -------------------------------------------------------------------------------- |
-| Yellow taxi trips    | Monthly trip records with pickup/dropoff times, locations, fares, and surcharges |
-| Green taxi trips     | Boro taxi trip records (outer boroughs)                                          |
-| HVFHV trips          | High-volume for-hire vehicle (Uber/Lyft-scale) trip records                      |
-| TLC taxi zone lookup | Zone IDs and geographic definitions for aggregation                              |
+| Source | Description | Current project use |
+|--------|-------------|---------------------|
+| Yellow taxi trips | Monthly trip records with pickup/dropoff times, locations, fares, and surcharges | **Included** (first-step cleaning complete) |
+| HVFHV trips | High-volume for-hire vehicle (Uber/Lyft-scale) trip records | **Included** (first-step cleaning complete) |
+| Green taxi trips | Boro taxi trip records (outer boroughs) | Deferred for later robustness checks |
+| FHV trips | Smaller for-hire vehicle trip records | Not used in current scope |
+| TLC taxi zone lookup | Zone IDs and geographic definitions for aggregation | Planned for zone-level work |
 
-Raw data files are stored locally under `data/` and are not committed to this repository due to size. See [Reproducing the analysis](#reproducing-the-analysis) for download instructions.
+### Study window and policy timing
+
+- **Primary comparison:** February–June **2024** (pre-policy) vs. February–June **2025** (post-policy).
+- **Transition month:** January 2025 is treated as a policy transition period and is **not** in the primary Feb–Jun panels.
+- **Congestion pricing start:** January 5, 2025 (CBD congestion fee on qualifying trips).
+
+Raw TLC parquet files are stored locally under `data/raw/` (by year and month) and are not committed to this repository due to size. See [Reproducing the analysis](#reproducing-the-analysis) and [`docs/data_structure_and_schema.md`](docs/data_structure_and_schema.md) for folder layout and column definitions.
+
+### Passenger cost definitions (standardized)
+
+Pre-tip passenger cost is defined consistently across services for burden comparisons:
+
+| Service | `passenger_cost_pretip` |
+|---------|-------------------------|
+| **Yellow Taxi** | `total_amount - tip_amount` |
+| **HVFHV** | `base_passenger_fare + tolls + bcf + sales_tax + congestion_surcharge + airport_fee + cbd_congestion_fee` |
+
+`relative_cbd_burden = cbd_congestion_fee / passenger_cost_pretip` when pre-tip cost is positive.
 
 ## Stakeholders
 
@@ -81,19 +99,48 @@ conda env create -f environment.yml
 conda activate congestion-pricing
 ```
 
-*(Environment specification is in progress; update `environment.yml` as dependencies are finalized.)*
+*(Dependencies: `pandas`, `pyarrow`, `numpy` — see `environment.yml`.)*
 
 ### Data
 
-1. Download monthly TLC trip record files from the [TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page) page (yellow, green, FHV, and HVFHV as needed).
-2. Place raw files in `data/raw/` (create subfolders by trip type if helpful).
-3. Run preprocessing scripts from `src/data/` once available.
+1. Download monthly TLC trip record files from the [TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page) page.
+2. Place raw parquet files in `data/raw/{year}/{Month}/` (e.g. `data/raw/2024/Feb/yellow_tripdata_2024-02.parquet`).
+3. Run first-step standardization (one raw file at a time; does not modify `data/raw/`):
+
+```bash
+python scripts/standardize_trips.py
+python scripts/make_trip_level_sample.py
+python scripts/validate_standardized_trips.py
+```
+
+**Outputs:**
+
+| Output | Description | Committed to git? |
+|--------|-------------|-------------------|
+| `data/processed/00_standardized_trips/` | Monthly cleaned parquet files by service (`yellow/`, `hvfhv/`) | No (too large; regenerate locally) |
+| `data/processed/samples/trip_level_sample.csv` | 100-row balanced CSV for manual inspection | Yes |
+| `data/processed/qc/` | Standardization, validation, and sample QC reports | Yes |
+
+See [`docs/data_structure_and_schema.md`](docs/data_structure_and_schema.md) for the full standardized schema and cleaning rules.
 
 ### Analysis
 
-1. Open and run notebooks in `notebooks/` in order, or execute pipeline scripts from `src/` as they are added.
-2. Outputs (tables, figures, disruption scores by zone) will be written to `data/processed/` and `presentation/` as the project matures.
+1. Open and run notebooks in `notebooks/` as they are added.
+2. Further feature engineering, EDA, zone disruption scores, and stakeholder outputs will build on the standardized trip files.
 
 ## Project Status
 
-Early setup — repository structure, data sourcing, and KPI definitions. Modeling and disruption-score methodology are in development.
+**Current phase: first-step data cleaning and standardization (Yellow Taxi + HVFHV).**
+
+| Area | Status |
+|------|--------|
+| Raw data download (Feb–Jun 2024 & 2025, Yellow + HVFHV) | Complete locally |
+| `scripts/standardize_trips.py` | Implemented |
+| `scripts/make_trip_level_sample.py` | Implemented |
+| `scripts/validate_standardized_trips.py` | Implemented |
+| `data/processed/00_standardized_trips/` | Produced locally by standardization script |
+| `data/processed/samples/trip_level_sample.csv` | Produced by sample script |
+| `data/processed/qc/` | Standardization + validation QC reports |
+| EDA, maps, modeling, disruption scores | **Not started** — next phase |
+
+Green Taxi integration and January 2025 transition analysis are planned for later robustness work.
