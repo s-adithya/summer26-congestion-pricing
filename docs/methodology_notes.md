@@ -108,13 +108,13 @@ Both fare metrics are reported as separate columns (not collapsed into one "avg 
 
 ## 7. Early-stage corrections (for project history / transparency)
 
-- **Date range confusion**: initial framing referenced "Feb–Jun 2024" as if it straddled the congestion pricing policy. Confirmed via web search that the actual CBD program began Jan 5, **2025**, not 2024 — corrected the study design to a year-over-year Feb–Jun 2024 vs. Feb–Jun 2025 comparison, with Jan 2025 excluded as a transition month.
+- **Date range confusion**: initial framing referenced "Feb–Jun 2024" as if it straddled the congestion pricing policy. study design is that of a year-over-year Feb–Jun 2024 vs. Feb–Jun 2025 comparison, with Jan 2025 excluded as a transition month.
 - **Column confusion**: `congestion_surcharge` (legacy, since 2019) vs. `cbd_congestion_fee` (new, 2025 CBD policy) are separate columns in the same schema and are easy to conflate. DS_z must use `cbd_congestion_fee` only.
 
-## 8. Open items / suggested next steps
+## 8. Open items / possible next steps
 
 - [ ] Sensitivity check on the $1 base-cost floor (try $0.50 and $5.00, confirm zone DS_z *rankings* are stable)
 - [ ] Formal correlation between DS_z and `pct_volume_change` across all zones (not just eyeballing top-20 overlap)
 - [ ] Identify the 2 zones with `pct_volume_change IS NULL` (zero 2024 baseline) by name
 - [ ] Consider CRZ-flag-isolated version of Layer B (trips actually charged the fee, 2025-only, compared against geographically-matched 2024 trips)
-- [ ] Join `taxi_zone_lookup.csv` (LocationID → Borough/Zone/service_zone) onto both `ds_z` and `behavioral_shift` outputs for human-readable final tables
+- [ ] Join `taxi_zone_lookup.csv` (LocationID → Borough/Zone/service_zone) onto both `ds_z` and `behavioral_shift` outputs for final tables
