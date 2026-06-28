@@ -41,20 +41,12 @@ not be a discovery; it would be an artifact of definition.
 
 DSₐ and pct_volume_change are computed from genuinely separate data:
 
-  ------------------ -------------------------- --------------------------
-    |                 **DSₐ**        |            **pct_volume_change** |
-  -----------------                  |          --------------
- | Source trips    |   2025 fee-charged trips only (charged_cbd_flag = 1)   |    All trips, both years (no fee filter)
-                                            
-
-  | What is measured  | Average ratio: fee / (total cost − fee)     |      Count ratio: n_2025 /n_2024 − 1 |
-                         
-
- | Years used       |  2025 only              |    2024 and 2025 |
-
-|  Mathematical form |  Arithmetic mean of a   per-trip ratio  |    Ratio of two aggregate  counts|
-                               
-  ------------------ -------------------------- --------------------------
+| Category            | **DSₐ**                                                                 | **pct_volume_change**                                      |
+|---------------------|-------------------------------------------------------------------------|-------------------------------------------------------------|
+| **Source trips**    | 2025 fee‑charged trips only (`charged_cbd_flag = 1`)                     | All trips, both years (no fee filter)                       |
+| **What is measured**| Average ratio: fee / (total cost − fee)                                  | Count ratio: n₍2025₎ / n₍2024₎ − 1                          |
+| **Years used**      | 2025 only                                                               | 2024 and 2025                                               |
+| **Mathematical form** | Arithmetic mean of a per‑trip ratio                                    | Ratio of two aggregate counts                               |
 
 Different populations (fee-charged vs. all trips), different years,
 different mathematical operations. A zone with high DSₐ is not, by
@@ -124,50 +116,19 @@ base fare is partly an outcome, not purely a predictor.
 
 ## Feature classification
 
-  --------------------- ------------- ------------------------------------
-  **Feature**           **Status**    **Reason**
+| **Feature**             | **Status**          | **Reason**                                                                 |
+|------------------------|---------------------|-----------------------------------------------------------------------------|
+| **n_2024**             | ✅ Safe             | Pre-policy baseline trip volume; does not encode any 2025 outcome          |
+| **avg_total_cost_2024**| ✅ Safe             | Pre-policy baseline fare; independent of CBD fee                           |
+| **avg_base_fare_2024** | ✅ Safe             | Pre-policy baseline base fare; independent of CBD fee                      |
+| **DS_z**               | ⚠️ Use with care    | 2025 metric; valid as primary causal variable, but cannot be combined with other 2025 covariates in the same model (Concern 2) |
+| **DS_z_median**        | ⚠️ Use with care    | Near-duplicate of DS_z; including both inflates apparent explanatory power without adding independent information |
+| **relative_cbd_burden**| ⚠️ Redundant        | Mathematical near-duplicate of DS_z (same numerator, slightly larger denominator); not an independent feature |
+| **avg_total_cost_2025**| ❌ Post-policy      | Encodes 2025 outcome; using as a predictor of 2025 disruption is circular  |
+| **avg_base_fare_2025** | ❌ Post-policy      | Same reason; the 2025 base fare may itself have shifted in response to the policy |
+| **n_2025**             | ❌ Post-policy      | Directly determines pct_volume_change; using as a predictor is tautological |
+| **pct_volume_change**  | ❌ Outcome          | Target variable in a behavioral model; cannot also be a predictor          |
 
-  n_2024                ✅ Safe       Pre-policy baseline trip volume;
-                                      does not encode any 2025 outcome
-
-  avg_total_cost_2024   ✅ Safe       Pre-policy baseline fare;
-                                      independent of CBD fee
-
-  avg_base_fare_2024    ✅ Safe       Pre-policy baseline base fare;
-                                      independent of CBD fee
-
-  DS_z                  ⚠️ Use with   2025 metric; valid as primary cause
-                        care          variable, but cannot be combined
-                                      with other 2025 covariates in the
-                                      same model (Concern 2)
-
-  DS_z_median           ⚠️ Use with   Near-duplicate of DS_z; including
-                        care          both inflates apparent explanatory
-                                      power without adding independent
-                                      information
-
-  relative_cbd_burden   ⚠️ Redundant  Mathematical near-duplicate of DS_z
-                                      (same numerator, slightly larger
-                                      denominator); not an independent
-                                      feature
-
-  avg_total_cost_2025   ❌            Encodes 2025 outcome; using as a
-                        Post-policy   predictor of 2025 disruption is
-                                      circular
-
-  avg_base_fare_2025    ❌            Same reason; the 2025 base fare may
-                        Post-policy   itself have shifted in response to
-                                      the policy
-
-  n_2025                ❌            Directly determines
-                        Post-policy   pct_volume_change; using as a
-                                      predictor of volume-based disruption
-                                      is tautological
-
-  pct_volume_change     ❌ Outcome    This is the target variable in a
-                                      behavioral model; cannot
-                                      simultaneously be a predictor
-  --------------------- ------------- ------------------------------------
 
 # Causal logic summary
 
