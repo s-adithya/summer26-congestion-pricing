@@ -166,4 +166,3 @@ often-missed form of over-controlling in policy evaluation.*
 | DSₐ and pct_volume_change are genuinely independent metrics whose correlation is empirically discovered, not algebraically guaranteed. | That the correlation is causal. High-DSₐ zones share other characteristics (density, short trips, Manhattan location) that could independently explain volume decline. |
 | The observed r = −0.61 is a conservative estimate; endogeneity from trip self-selection would attenuate, not inflate, the true association. | That DSₐ is a clean, uncontaminated measure of policy shock. It was computed on the 2025 trips that survived into the post-policy period, not the counterfactual pre-policy population. |
 | Pre-policy zone characteristics (2024 fare, 2024 volume) are valid covariates for any downstream model. | That post-policy variables (2025 fare, 2025 volume, N_z) can be used as independent predictors alongside DSₐ in a causal model. |
-``-------
