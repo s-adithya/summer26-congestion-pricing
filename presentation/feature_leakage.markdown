@@ -42,19 +42,18 @@ not be a discovery; it would be an artifact of definition.
 DSₐ and pct_volume_change are computed from genuinely separate data:
 
   ------------------ -------------------------- --------------------------
-                     **DSₐ**                    **pct_volume_change**
+    |                 **DSₐ**        |            **pct_volume_change** |
+  -----------------                  |          --------------
+ | Source trips    |   2025 fee-charged trips only (charged_cbd_flag = 1)   |    All trips, both years (no fee filter)
+                                            
 
-  Source trips       2025 fee-charged trips     All trips, both years (no
-                     only (charged_cbd_flag =   fee filter)
-                     1)                         
+  | What is measured  | Average ratio: fee / (total cost − fee)     |      Count ratio: n_2025 /n_2024 − 1 |
+                         
 
-  What is measured   Average ratio: fee /       Count ratio: n_2025 /
-                     (total cost − fee)         n_2024 − 1
+ | Years used       |  2025 only              |    2024 and 2025 |
 
-  Years used         2025 only                  2024 and 2025
-
-  Mathematical form  Arithmetic mean of a       Ratio of two aggregate
-                     per-trip ratio             counts
+|  Mathematical form |  Arithmetic mean of a   per-trip ratio  |    Ratio of two aggregate  counts|
+                               
   ------------------ -------------------------- --------------------------
 
 Different populations (fee-charged vs. all trips), different years,
