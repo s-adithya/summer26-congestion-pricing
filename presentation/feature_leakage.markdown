@@ -161,25 +161,9 @@ often-missed form of over-controlling in policy evaluation.*
 
 # Summary: what this analysis claims and does not claim
 
-  ----------------------------------- -----------------------------------
-  **What we claim**                   **What we do not claim**
-
-  DSₐ and pct_volume_change are       That the correlation is causal.
-  genuinely independent metrics whose High-DSₐ zones share other
-  correlation is empirically          characteristics (density, short
-  discovered, not algebraically       trips, Manhattan location) that
-  guaranteed.                         could independently explain volume
-                                      decline.
-
-  The observed r = −0.61 is a         That DSₐ is a clean, uncontaminated
-  conservative estimate; endogeneity  measure of policy shock. It was
-  from trip self-selection would      computed on the 2025 trips that
-  attenuate, not inflate, the true    survived into the post-policy
-  association.                        period, not the counterfactual
-                                      pre-policy population.
-
-  Pre-policy zone characteristics     That post-policy variables (2025
-  (2024 fare, 2024 volume) are valid  fare, 2025 volume, N_z) can be used
-  covariates for any downstream       as independent predictors alongside
-  model.                              DSₐ in a causal model.
-  ----------------------------------- -----------------------------------
+| **What we claim** | **What we do not claim** |
+|------------------|--------------------------|
+| DSₐ and pct_volume_change are genuinely independent metrics whose correlation is empirically discovered, not algebraically guaranteed. | That the correlation is causal. High-DSₐ zones share other characteristics (density, short trips, Manhattan location) that could independently explain volume decline. |
+| The observed r = −0.61 is a conservative estimate; endogeneity from trip self-selection would attenuate, not inflate, the true association. | That DSₐ is a clean, uncontaminated measure of policy shock. It was computed on the 2025 trips that survived into the post-policy period, not the counterfactual pre-policy population. |
+| Pre-policy zone characteristics (2024 fare, 2024 volume) are valid covariates for any downstream model. | That post-policy variables (2025 fare, 2025 volume, N_z) can be used as independent predictors alongside DSₐ in a causal model. |
+``-------
