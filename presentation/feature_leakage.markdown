@@ -53,7 +53,7 @@ different mathematical operations. A zone with high DSₐ is not, by
 construction, guaranteed to have a negative pct_volume_change. The
 correlation between them is a real empirical finding.
 
-# Concern 2 --- Endogeneity between DSₐ and volume change
+# Concern 2 : Endogeneity between DSₐ and volume change
 
 ## The risk
 
@@ -86,7 +86,7 @@ would have been observed had the policy not changed trip volumes. This
 is not computable from the available data. We note it here as a known
 limitation rather than a solved problem.
 
-# Concern 3 --- Feature contamination in downstream models
+# Concern 3 : Feature contamination in downstream models
 
 ## The risk
 
